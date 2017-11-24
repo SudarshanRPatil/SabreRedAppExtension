@@ -1,0 +1,9 @@
+<CFBundle>
+	<RedApp id="20171121-tlg-extension" >
+		<Authorization name="com.sabre.edge.cf.emu.ExecuteInEmulator" threshold="1" metric="tps" />
+		<Authorization name="com.sabre.edge.cf.emu.ShowInEmulator" threshold="1" metric="tps" />
+		<Authorization name="com.sabre.edge.cf.host.Communication" threshold="1" metric="tps" />
+		<Authorization name="com.sabre.edge.dynamo.cf.service.GetPnr" threshold="10" metric="tpm" />
+	</RedApp>
+    <EventListener event_filter="EMU_RESPONSE" handler_class="com.tlg.pinsight.listeners.CommandListener" state="PRE" action_code="" />	
+</CFBundle>
